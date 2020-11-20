@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+$myFontPrimary: 15px;
+$myFontSecondary: 13px;
+$myFontTertiary: 11px;
+.body-container {
+  background: {
+    image: url("../images/bg.jpg");
+    repeat: no-repeat;
+    size: cover;
+  }
+  font: {
+    family: "Fira Sans", sans-serif;
+    size: 16.5px;
+  }
+  margin: 0 15%;
+}
+.search-box {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  border: solid white 2px;
+}
+.header-container {
+  height: 70px;
+  margin-top: 32px;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: rgb(8, 18, 28);
+  opacity: 0.8;
+}
+.header-style {
+  border: solid #4e4d53 1px;
+}
+.header-logo {
+  height: 60px;
+}
+.ftz-logo {
+  position: relative;
+  bottom: 50px;
+}
+.header-nav {
+  li {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 0; //default line-height
+    &:not(:last-child)::after {
+      content: "|";
+      color: whitesmoke;
+      font-size: 15px;
+    }
+  }
+  a {
+    font: {
+      size: $myFontPrimary;
+      weight: 400;
+      family: "Alegreya Sans", sans-serif;
+    }
+    margin: 0;
+    color: #acdeff;
+    text-decoration: none;
+    padding: 5px 20px;
+    &:hover {
+      color: white;
+      background-color: #acdeff;
+    }
+  }
+}
+.divider {
+  &::after {
+    content: "|";
+    color: whitesmoke;
+    font-size: $myFontPrimary;
+  }
+}
+
+.active {
+  color: white !important;
+  background-color: rgb(73, 103, 129);
+}
+.content-container {
+  padding: 3px;
+  background-color: rgba(8, 18, 28, 0.8);
+  color: rgb(248, 248, 250);
+  .content-container-border {
+    border: {
+      width: 1px;
+      style: solid;
+      image: linear-gradient(rgba(8, 18, 28, 0), rgba(86, 94, 105, 1)) 1;
+    }
+  }
+}
+.my-table {
+  border: solid white 2px;
+  td,
+  th {
+    padding: 5px;
+    padding-left: 10px;
+    color: #ffffff;
+  }
+  td {
+    font-weight: 300;
+  }
+}
+.calculate-btn-container {
+  font-weight: 200;
+  font-size: $myFontPrimary;
+}
+.calculate-btn {
+  background-color: #28416d;
+  border: solid #28416d 2px;
+  height: 20px;
+  letter-spacing: 0;
+  padding-bottom: 10px;
+  width: 100px;
+  color: white;
+  font-weight: 200;
+  font-size: $myFontSecondary;
+}
+footer {
+  color: #fffef8;
+  height: 30px;
+  background-color: rgba(30, 48, 82, 0.7);
+  padding-top: 5px;
+  padding-bottom: 2px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: $myFontTertiary;
+  font-weight: 400;
+}
+footer a {
+  color: white;
+  font-size: $myFontSecondary;
+  font-weight: 400;
+}
+.footer-divider-style {
+  padding: 8px;
+  font-size: $myFontTertiary !important;
+}
+
+.highlight {
+  background: cyan;
+  font-weight: bold;
+  padding: 1px;
+  color: black;
+}
+// custom checkbox
+input[type="checkbox"] {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: solid white 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: $myFontPrimary;
+    color: blue;
+    display: none;
+  }
+  &:hover {
+    background-color: tan;
+  }
+  &:checked {
+    background-color: white;
+  }
+  &:checked::after {
+    display: block;
+  }
+}

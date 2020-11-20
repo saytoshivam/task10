@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+.body-container {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16.5px;
+  margin: 0 15%;
+}
+
+.search-box {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  border: solid white 2px;
+}
+
+.header-container {
+  height: 70px;
+  margin-top: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  background-color: #08121c;
+  opacity: 0.8;
+}
+
+.header-style {
+  border: solid #4e4d53 1px;
+}
+
+.header-logo {
+  height: 60px;
+}
+
+.ftz-logo {
+  position: relative;
+  bottom: 50px;
+}
+
+.header-nav li {
+  padding-top: 10px;
+  margin: 0;
+  font-size: 0;
+}
+
+.header-nav li:not(:last-child)::after {
+  content: "|";
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.header-nav a {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 0;
+  color: #acdeff;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+.header-nav a:hover {
+  color: white;
+  background-color: #acdeff;
+}
+
+.divider::after {
+  content: "|";
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.active {
+  color: white !important;
+  background-color: #496781;
+}
+
+.content-container {
+  padding: 3px;
+  background-color: rgba(8, 18, 28, 0.8);
+  color: #f8f8fa;
+}
+
+.content-container .content-container-border {
+  border-width: 1px;
+  border-style: solid;
+  -o-border-image: linear-gradient(rgba(8, 18, 28, 0), #565e69) 1;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 18, 28, 0)), to(#565e69)) 1;
+     border-image: linear-gradient(rgba(8, 18, 28, 0), #565e69) 1;
+}
+
+.my-table {
+  border: solid white 2px;
+}
+
+.my-table td,
+.my-table th {
+  padding: 5px;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.my-table td {
+  font-weight: 300;
+}
+
+.calculate-btn-container {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.calculate-btn {
+  background-color: #28416d;
+  border: solid #28416d 2px;
+  height: 20px;
+  letter-spacing: 0;
+  padding-bottom: 10px;
+  width: 100px;
+  color: white;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+footer {
+  color: #fffef8;
+  height: 30px;
+  background-color: rgba(30, 48, 82, 0.7);
+  padding-top: 5px;
+  padding-bottom: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+footer a {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer-divider-style {
+  padding: 8px;
+  font-size: 11px !important;
+}
+
+.highlight {
+  background: cyan;
+  font-weight: bold;
+  padding: 1px;
+  color: black;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: solid white 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 15px;
+  color: blue;
+  display: none;
+}
+
+input[type="checkbox"]:hover {
+  background-color: tan;
+}
+
+input[type="checkbox"]:checked {
+  background-color: white;
+}
+
+input[type="checkbox"]:checked::after {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
